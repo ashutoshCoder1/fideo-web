@@ -1,0 +1,198 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginButton {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.heroBox1 {
+  background: url(../../../public/hero-1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.inputBox {
+  border-radius: 8px;
+  border: 2px solid #ecf0ef;
+  color: #000000;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 30px;
+  width: 360px;
+  height: 54px;
+  padding: 12px 20px;
+}
+
+.inputBox:focus-visible {
+  outline: none;
+}
+
+/* Button Styles */
+.buttonReset {
+  /* Remove default browser styles */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  appearance: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 30px;
+  height: 54px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff5f3c 0%, #ffa5a0 100%);
+}
+
+/* Hover Styles */
+.button:hover {
+  background: linear-gradient(135deg, #ff814c 0%, #ffb5b0 100%);
+}
+
+/* Active Styles */
+.button:active {
+  background: linear-gradient(135deg, #ff884e 0%, #ffbeb9 100%);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.animateFloat {
+  animation: float 2s infinite;
+}
+
+.animateFloat:hover {
+  animation-play-state: paused;
+}
+
+/* how it works */
+.hiwBox {
+  color: #bacccc;
+  font-family: "Inter-Regular", Helvetica;
+}
+
+.hiwBoxText {
+  margin-top: 32px;
+}
+
+.hiwBoxStep {
+  color: #ffffff99;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-decoration: underline;
+  white-space: nowrap;
+  /* width: 251px; */
+}
+
+.hiwBoxTextBold {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* .hiwBoxTextRegular {
+  font-weight: 400;
+} */
+
+.numberedCarousel {
+  color: #010c0c;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 100px;
+  background: #fff;
+  height: 20px;
+  width: 32px;
+  background-color: #ecf0ef;
+  margin-right: 8px;
+}
+
+.scrollXBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollXBar::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselWrap {
+  display: flex;
+  flex-wrap: wrap;
+  .carouselItem {
+    flex: 1 0 25%; /* By default, 4 columns */
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      flex-basis: 50%; /* On smaller screens, 2 columns */
+    }
+  }
+}
+
+// navbar button
+.buttonNavbar {
+  cursor: pointer;
+  padding: 0px 20px;
+  border-radius: 6px;
+  border: 2px solid #04130f;
+  background-color: #ffffff;
+
+  color: #04130f;
+  text-align: center;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 20px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+/* Hover Styles */
+.buttonNavbar:hover {
+  // background: linear-gradient(135deg, #000 0%, #ffb5b0 100%);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Active Styles */
+.buttonNavbar:active {
+  background-color: #000000;
+  color: #ffffff;
+  // background: linear-gradient(135deg, #ff884e 0%, #ffbeb9 100%);
+}
